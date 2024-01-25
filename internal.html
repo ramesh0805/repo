@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fresher's Job Application</title>
+</head>
+<body>
+    <h1>Fresher's Job Application</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Name of the applicant*:</label>
+        <input type="text" id="name" name="name" required><br><br>
+       
+        <label>Are you a resident of India*:</label><br>
+        <input type="radio" id="resident_yes" name="resident" value="yes" required>
+        <label for="resident_yes">Yes</label>
+        <input type="radio" id="resident_no" name="resident" value="no" required>
+        <label for="resident_no">No</label><br><br>
+
+        <label for="state">Applicant State*:</label>
+        <select id="state" name="state" required>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+       
+        <label for="degree">Your degree*:</label>
+        <select id="degree" name="degree" required>
+            <option value="B.E.">B.E.</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.Ed.">B.Ed.</option>
+            <option value="B.Com">B.Com</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+       
+        <label for="graduationYear">Year of Graduation*:</label>
+        <select id="graduationYear" name="graduationYear" required>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select><br><br>
+
+        <label>Have you done Post Graduate*:</label><br>
+        <input type="radio" id="pg_yes" name="postGraduate" value="yes" required>
+        <label for="pg_yes">Yes</label>
+        <input type="radio" id="pg_no" name="postGraduate" value="no" required>
+        <label for="pg_no">No</label><br><br>
+       
+        <label for="graduationPercentage">Your Graduation Percentage:</label>
+        <input type="number" id="graduationPercentage" name="graduationPercentage"><br><br>
+
+        <label for="college">Name of the college:</label>
+        <input type="text" id="college" name="college"><br><br>
+
+        <label for="strengths">Your Strengths:</label>
+        <textarea id="strengths" name="strengths" rows="4" cols="50"></textarea><br><br>
+
+        <label>Key Skills:</label><br>
+        <input type="checkbox" id="c" name="skills[]" value="C">
+        <label for="c">C</label>
+        <input type="checkbox" id="java" name="skills[]" value="Java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="sql" name="skills[]" value="SQL">
+        <label for="sql">SQL</label>
+        <input type="checkbox" id="python" name="skills[]" value="Python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="web_design" name="skills[]" value="Web Designing">
+        <label for="web_design">Web Designing</label><br><br>
+
+        <label for="email">Your email id:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Your mobile number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Your DOB:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Would you like to relocate to work in India:</label><br>
+        <input type="radio" id="relocate_yes" name="relocate" value="yes">
+        <label for="relocate_yes">Yes</label>
+        <input type="radio" id="relocate_no" name="relocate" value="no">
+        <label for="relocate_no">No</label><br><br>
+
+        <label for="linkedin">Your LinkedIn url:</label>
+        <input type="url" id="linkedin" name="linkedin"><br><br>
+
+        <label for="certifications">Any Professional certifications:</label>
+        <input type="text" id="certifications" name="certifications"><br><br>
+
+        <label for="hackerrank">Your HackerRank Rank:</label>
+        <input type="text" id="hackerrank" name="hackerrank"><br><br>
+
+        <label for="codechef">Your Code chef Rank:</label>
+        <input type="text" id="codechef" name="codechef"><br><br>
+
+        <label for="resume">Upload your resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx"><br><br>
+
+        <label for="image">Insert your image:</label>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I declare that all the above details are correct</label><br><br>
+    
+         </form>
+ <a href="http://127.0.0.1:5500/task2/index1.html"><button>submit</button></a>
+      
+</body>
+</html>
